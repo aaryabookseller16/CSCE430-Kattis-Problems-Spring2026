@@ -1,6 +1,6 @@
 # CSCE 430 — Problem Solving Strategies (Week 1)
 
-This repository contains my **Week 1 solutions** for **CSCE 430**. The focus of this course is developing systematic problem-solving strategies through competitive programming–style problems.
+This repository contains my solutions for **CSCE 430**. The focus of this course is developing systematic problem-solving strategies through competitive programming–style problems.
 
 All problems are solved using **Python** and are tested against the official **Kattis online judge**.
 
