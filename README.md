@@ -8,58 +8,48 @@ All problems are solved using **Python** and are tested against the official **K
 
 ---
 
-## Repository Structure
+## Repository Contents
 
-Each folder corresponds to **one problem** and contains:
+This repository contains:
 
-- `description.md` — Clean Markdown version of the official problem statement
-- `solution.py` — My implementation
+- **Weekly problem solutions** assigned as part of CSCE 430
+- **Weekly lab solutions**, when applicable
+- **Upsolves** for problems that required revisiting after the initial attempt
+
+Each problem is organized into its own folder.
+
+---
+
+## Folder Structure
+
+Each problem folder contains:
+
+- `description.md` — Markdown version of the official problem statement
+- `solution.py` — Python solution implementation
 - `input.txt` — Sample input used for local testing
+
+Example structure:
 
 ```
 week1/
-├── 1d-frogger
-├── alien-numbers
-├── kindergarten-excursion
-├── natrij
-├── path-tracing
-├── pivot
+├── problem-name/
+│   ├── description.md
+│   ├── input.txt
+│   └── solution.py
 └── README.md
 ```
 
 ---
 
-## Problems Included
+## Running Solutions Locally
 
-### 1. 1D Frogger
-- Simulates frog movement on a one-dimensional board
-- Requires careful cycle detection and boundary checking
-- Emphasizes simulation and state tracking
+Each solution can be run locally using standard input redirection:
 
-### 2. Alien Numbers
-- Converts numbers between arbitrary alien numeral systems
-- Reinforces base conversion and symbol mapping
-- Focuses on careful parsing and representation
+```bash
+python solution.py < input.txt
+```
 
-### 3. Kindergarten Excursion
-- Rearranges a sequence using **minimum adjacent swaps**
-- Equivalent to counting constrained inversions
-- Highlights greedy reasoning and efficiency constraints
-
-### 4. Natrij
-- Computes the time difference between two clock times
-- Includes wrap-around across midnight
-- Focuses on edge cases and modular arithmetic
-
-### 5. Path Tracing
-- Traces a path given directional moves
-- Outputs a bounded 2D map with strict formatting
-- Emphasizes coordinate tracking and output precision
-
-### 6. Pivot
-- Identifies valid pivot elements after array partitioning
-- Uses prefix maximums and suffix minimums
-- Demonstrates linear-time reasoning on arrays
+This mirrors the execution environment used by the **Kattis** online judge.
 
 ---
 
