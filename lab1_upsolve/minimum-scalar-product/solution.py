@@ -1,33 +1,36 @@
 import sys
 
-# read the number of test cases
-data = sys.stdin.buffer.read().split()
-idx = 0
-outputs = []
+tokens = sys.stdin.buffer.read().split()
+index = 0
+answers = []
 
-# loop as long as we have tets cases
-if idx < len(data):
-    total_cases = int(data[idx])
-    idx += 1
-    # processing one test case
-    for case_num in range(1, total_cases + 1):
-        test_case_size = int(data[idx]) # read array size
+if index < len(tokens):
+    total_test_cases = int(tokens[index])
+    index += 1
+
+    # print("Loaded test cases:", total_test_cases)
+
+    for case_number in range(1, total_test_cases + 1):
+        vector_size = int(tokens[index])
+        index += 1
         
-        # read the 2 arrays
-        idx += 1
-        temp_vector_1 = list(map(int, data[idx:idx + test_case_size]))
-        idx += test_case_size
-        temp_vector_2 = list(map(int, data[idx:idx + test_case_size]))
-        idx += test_case_size
+        # load in the input
+        first_vector = list(map(int, tokens[index:index + vector_size]))
+        index += vector_size
+        second_vector = list(map(int, tokens[index:index + vector_size]))
+        index += vector_size
 
-        temp_vector_1.sort()
-        temp_vector_2.sort(reverse=True)
-        
-        # compute scalar product
-        scalar_product = 0 
-        for i in range(test_case_size):
-            scalar_product += temp_vector_1[i] * temp_vector_2[i]
+        # print("Case", case_number, "size:", vector_size)
+        # print("Vector 1:", first_vector)
+        # print("Vector 2:", second_vector)
 
-        outputs.append(f"Case #{case_num}: {scalar_product}")
+        first_vector.sort()
+        second_vector.sort(reverse=True)
 
-sys.stdout.write("\n".join(outputs))
+        minimum_scalar_product = 0
+        for i in range(vector_size):
+            minimum_scalar_product += first_vector[i] * second_vector[i]
+
+        answers.append(f"Case #{case_number}: {minimum_scalar_product}")
+
+sys.stdout.write("\n".join(answers))
