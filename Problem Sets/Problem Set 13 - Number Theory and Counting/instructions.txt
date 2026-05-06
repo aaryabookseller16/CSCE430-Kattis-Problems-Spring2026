@@ -1,0 +1,171 @@
+# Writing Original Programming Assignments
+
+## Purpose
+
+This document explains how to complete programming assignments honestly while
+still using outside resources responsibly. It is meant to help students avoid
+accidental plagiarism, understand code similarity tools, and build solutions
+they can explain.
+
+The goal is not to hide copied work. The goal is to make sure the work you
+submit is actually yours.
+
+## Why Similarity Tools Exist
+
+Many courses use tools such as MOSS, which stands for Measure Of Software
+Similarity. These tools compare programs and look for shared structure,
+patterns, and unusually similar code.
+
+They are not used because students are expected to work in isolation forever.
+They are used because programming assignments should measure what each student
+understands and can build.
+
+## What Counts As Unsafe Work
+
+The following choices can create academic-integrity problems:
+
+- copying code from another student
+- copying code from a website without permission or citation
+- changing variable names in copied code and submitting it
+- rearranging copied code without understanding it
+- using generated or borrowed code that you cannot explain
+- sharing your full solution with someone who has not finished the assignment
+
+Even if the final code has different names or formatting, it may still be
+considered copied if the structure and reasoning came from someone else.
+
+## What Is Usually Safe
+
+Course policies differ, so always follow your syllabus first. In many classes,
+these are usually acceptable:
+
+- reading the problem statement carefully
+- discussing the high-level idea with classmates
+- reviewing lecture notes, textbooks, and official documentation
+- asking for help understanding an algorithm
+- debugging your own code with a TA, tutor, or assistant
+- using small examples to test your reasoning
+- citing any outside source that influenced your final solution
+
+When in doubt, ask the instructor before submitting.
+
+## How To Build Your Own Solution
+
+Start by writing down the problem in your own words.
+
+Identify:
+
+- what the input means
+- what the output should be
+- the constraints
+- the simplest possible example
+- the edge cases
+
+Then design the algorithm before writing code. A good algorithm plan should
+answer:
+
+- what data needs to be stored
+- what loop or process changes that data
+- why the algorithm gives the correct answer
+- how fast it is
+
+After that, write the code yourself from your own plan.
+
+## How To Use Help Responsibly
+
+If you get stuck, ask for help at the right level.
+
+Good help requests:
+
+- "Can you explain why modular inverse applies here?"
+- "Can you help me find the bug in this loop?"
+- "Can you give me a small test case that breaks my idea?"
+- "Can you explain this error message?"
+
+Risky help requests:
+
+- "Give me the full solution so I can submit it."
+- "Rewrite this copied solution so it looks different."
+- "Make this code avoid plagiarism detection."
+
+If someone helps you understand an idea, rewrite the solution yourself afterward
+without looking at their code.
+
+## How To Cite Outside Sources
+
+If your course allows outside resources, keep notes about what you used.
+
+Example citation comment:
+
+```text
+# I reviewed the modular inverse idea from the course notes on number theory.
+```
+
+Example README note:
+
+```text
+I discussed the high-level greedy strategy with a classmate, but the code and
+implementation are my own.
+```
+
+Do not cite a copied solution as if that automatically makes it acceptable.
+Citation does not replace course rules.
+
+## Similarity Is Not Just Variable Names
+
+Changing names like `x` to `answer` does not make copied work original.
+
+Formatting changes also do not make copied work original.
+
+Original work comes from understanding the problem, designing your own approach,
+and writing the implementation yourself.
+
+It is fine if many correct solutions use the same standard algorithm. For
+example, many people may use breadth-first search, dynamic programming, sorting,
+or extended Euclid. What matters is that your code was written from your own
+understanding and follows the allowed collaboration rules.
+
+## Debugging Checklist
+
+Before submitting, check:
+
+- does the code read input exactly as the judge expects?
+- does it print only the required output?
+- does it handle the smallest input?
+- does it handle the largest input?
+- does it handle repeated values, empty-looking cases, or impossible cases?
+- can you explain each important line of code?
+
+If you cannot explain a section, rewrite it until you can.
+
+## Working With Classmates
+
+Collaboration can be useful when it is allowed and done carefully.
+
+Healthy collaboration:
+
+- compare interpretations of the problem statement
+- talk through examples
+- discuss possible algorithms without sharing full code
+- help each other find mistakes using test cases
+
+Unhealthy collaboration:
+
+- sending your complete solution
+- copying someone else's complete solution
+- working from one shared file unless the assignment is explicitly group work
+- asking someone to disguise code so it appears original
+
+## Final Rule
+
+Submit code that you understand and can defend.
+
+If an instructor asks how your solution works, you should be able to explain:
+
+- the main idea
+- why it is correct
+- why it fits the constraints
+- what each major part of the code does
+
+That is the best way to avoid plagiarism issues and to actually learn the
+material.
